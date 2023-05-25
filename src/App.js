@@ -1,18 +1,23 @@
-import logo from './logo.svg';
+import Europe from './Components/Europe.jsx';
+import CountryObject from './Components/Country.jsx';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Belarus from './Belarus.js';
 import './CSS/App.css';
-
-import Europe from './Components/Europe';
 import './CSS/Europe.css';
+import './CSS/Country.css'
 
 
 function App() {
+
   return (
     <div className="App">
-      <Europe/>
-      {/* <header className="App-header">
-        { <img src={logo} className="App-logo" alt="logo" /> }
-        
-      </header> */}
+      <Router>
+          <Routes>
+              <Route path="/" element={<Europe />}/>
+              <Route path="/Belarus" element={<CountryObject />}></Route>
+              <Route path="/Poland" element={<CountryObject />}></Route>
+          </Routes>
+      </Router>
     </div>
   );
 }

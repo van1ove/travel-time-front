@@ -1,0 +1,11 @@
+.CountryClass{
+    
+}
+
+nav {
+    width: 100%;
+    padding: 0px;
+    margin: -20px;
+    font-size: 16px;
+    box-shadow: 0 0 8px 2px #888888;
+}
