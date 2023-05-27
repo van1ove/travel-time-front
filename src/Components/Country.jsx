@@ -4,13 +4,14 @@ import '../CSS/CountryClass.module.css'
 import { NavLink } from "react-router-dom";
 
 
-const CountryObject = () =>{
+const CountryObject = (props) =>{
     return(
         <div>
             <div className="CountryClass">
                 {/* <button onClick={() => window.open("https://natribu.org/")}> </button> */}
                 <nav>
                     <ul>
+                        <img></img>
                         <label for="">Go back</label>
                         <li>Account</li>
                         <li>Home</li>

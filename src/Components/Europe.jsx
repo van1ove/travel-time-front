@@ -1,5 +1,6 @@
 import React, {useState} from "react"; 
-import { useNavigate } from "react-router-dom";
+import CountryObject from "./Country";
+import { useNavigate, Link } from "react-router-dom";
 import europe from '../Pictures/Europe.jpg'
 import '../CSS/Europe.css';
 
