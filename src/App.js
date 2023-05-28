@@ -1,11 +1,9 @@
 import Europe from './Components/Europe.jsx';
 import Country from './Components/Country.jsx';
-import './CSS/Europe.css';
-import './CSS/Country.css'
-import './CSS/App.css';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AppRouter from './Components/AppRouter.jsx';
+import NavigationBar from './Components/NavigationBar.jsx';
 
 
 function App() {

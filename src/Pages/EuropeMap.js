@@ -1,14 +1,19 @@
 import React from "react";
+import Image from 'react-bootstrap/Image'
 import EuropeJPG from '../Pictures/Europe.jpg' 
+import '../CSS/Europe.css'
+import countries from '../Store/CountriesStore'
+import NavigationBar from "../Components/NavigationBar";
+import Europe from "../Components/Europe";
 import '../CSS/Europe.css'
 
 const EuropeMap = () => {
     return (
-        <img src={EuropeJPG}>
-            {/* <svg viewBox="0 0 1920 1080">
-                {countries.map(country => console.log(country.reference))}
-            </svg> */}
-        </img>
+        <div>
+
+            <Europe/>
+            <NavigationBar/>
+         </div>
     );
 }
 

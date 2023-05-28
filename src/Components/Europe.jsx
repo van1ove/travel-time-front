@@ -1,8 +1,8 @@
 import React, {useState} from "react"; 
-import CountryObject from "./Country";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import europe from '../Pictures/Europe.jpg'
 import '../CSS/Europe.css';
+import { COUNTRY_ROUTE } from "../Store/Consts";
 
 
 const Europe = () => {
@@ -25,7 +25,7 @@ const Europe = () => {
 
             <svg viewBox="0 0 1920 1080">
                 {countries.map(country =>
-                    <path className="Country" d={country.d} onClick={() => navigate(country.reference)}/> )}
+                    <path className="Country" d={country.d} onClick={() => navigate(COUNTRY_ROUTE)}/> )}
             </svg>
         </div>
     )
