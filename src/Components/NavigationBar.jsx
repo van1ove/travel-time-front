@@ -9,9 +9,9 @@ import { LOGIN_ROUTE, MAP_ROUTE } from "../Store/Consts"
 const NavigationBar = () => {
     const {user} = useContext(Context)
     return (
-        <Navbar style={{position: "fixed", width: "101%", top: 20}} bg="dark" variant="dark">
+        <Navbar style={{position: "fixed", width: "101%", top: 20, fontSize: 26}} bg="dark" variant="dark">
             <Container>
-            <Navbar.Brand style={{color: 'greenyellow'}}>TravelTime</Navbar.Brand>
+            <Navbar.Brand style={{color: 'greenyellow', fontSize: 26}}>TravelTime</Navbar.Brand>
             <Nav className="ml-auto">
                 <Nav.Link href={LOGIN_ROUTE}>Sign In</Nav.Link>
             </Nav>
