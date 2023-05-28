@@ -15,9 +15,9 @@ function App() {
               <Route path="/Belarus" element={<Country />}></Route>
               <Route path="/Poland" element={<Country />}></Route>
           </Routes> */}
-          <NavigationBar/>
-      
+    
           <AppRouter />
+          <NavigationBar/>
 
       </Router>
   );

@@ -23,7 +23,7 @@ const Europe = () => {
         <div class="Europe">
             <img src={europe} alt="Европа"/>
 
-            <svg viewBox="0 0 1920 1080">
+            <svg viewBox="0 0 1900 1080">
                 {countries.map(country =>
                     <path className="Country" d={country.d} onClick={() => navigate(COUNTRY_ROUTE)}/> )}
             </svg>

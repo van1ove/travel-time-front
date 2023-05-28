@@ -2,8 +2,10 @@ import Admin from '../Pages/Admin'
 import Country from "../Pages/Country"
 import EuropeMap from "../Pages/EuropeMap"
 import Sight from '../Pages/Sight'
-import Auth from '../Pages/Auth'
-import { ADMIN_ROUTE, COUNTRY_ROUTE, LOGIN_ROUTE, MAP_ROUTE, REGISTARTION_ROUTE, SIGHT_ROUTE, FORM_ROUTE } 
+import Authoriz from '../Pages/Аuth'
+import Registr from '../Pages/Registration'
+
+import { ADMIN_ROUTE, COUNTRY_ROUTE, MAP_ROUTE, SIGHT_ROUTE, LOGIN_ROUTE, FORM_ROUTE, REGISTARTION_ROUTE } 
     from "./Consts"
 
 export const authRoutes = [
@@ -32,10 +34,10 @@ export const publicRoutes = [
     },
     {
         path: LOGIN_ROUTE,
-        Component: Auth
+        Component: Authoriz
     },
     {
         path: REGISTARTION_ROUTE,
-        Component: Auth
+        Component: Registr
     }
 ]

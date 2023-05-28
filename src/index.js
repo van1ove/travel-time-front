@@ -5,7 +5,6 @@ import CountriesStore from './Store/CountriesStore';
 import UserStore from './Store/UserStore.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 export const Context = createContext(null)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,12 +12,10 @@ root.render(
   <React.StrictMode>
     <Context.Provider value={{
       user: new UserStore(),
-      //countries: new CountriesStore()
+      countries: new CountriesStore()
     }}>
       <App />
     </Context.Provider>
-
-
   </React.StrictMode>
 );
 

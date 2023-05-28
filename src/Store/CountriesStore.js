@@ -21,5 +21,4 @@ export default class CountriesStore{
     get countries(){
         return this._countries;
     }
-
 }
