@@ -25,8 +25,7 @@ const NavigationBar = observer(() => {
                 }
                 </Container>
             </Navbar>
-        );
-    
+        );    
 })
 
 
