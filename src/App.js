@@ -9,16 +9,9 @@ import NavigationBar from './Components/NavigationBar.jsx';
 function App() {
 
   return (
-    <Router>
-          {/* <Routes>
-              <Route path="/" element={<Europe />}/>
-              <Route path="/Belarus" element={<Country />}></Route>
-              <Route path="/Poland" element={<Country />}></Route>
-          </Routes> */}
-    
+    <Router basename='TravelTime'>    
           <AppRouter />
           <NavigationBar/>
-
       </Router>
   );
 }

@@ -1,8 +1,8 @@
 import Admin from '../Pages/Admin'
 import Country from "../Components/Country"
 import EuropeMap from "../Components/Europe"
-import Sight from '../Pages/Sight'
-import Authoriz from '../Pages/Аuth'
+import Sight from '../Components/Sight'
+import Auth from '../Pages/Аuth'
 import Registr from '../Pages/Registration'
 
 import { ADMIN_ROUTE, COUNTRY_ROUTE, MAP_ROUTE, SIGHT_ROUTE, LOGIN_ROUTE, FORM_ROUTE, REGISTARTION_ROUTE } 
@@ -34,7 +34,7 @@ export const publicRoutes = [
     },
     {
         path: LOGIN_ROUTE,
-        Component: Authoriz
+        Component: Auth
     },
     {
         path: REGISTARTION_ROUTE,

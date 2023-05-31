@@ -2,12 +2,11 @@ import React, { useContext } from "react";
 import { Routes, Route} from 'react-router-dom'
 import { authRoutes, publicRoutes } from "../Store/AppRoutes";
 import { Context } from "..";
+import Europe from '../Components/Europe'
+import { MAP_ROUTE } from "../Store/Consts";
 
 const AppRouter = () => {
     const {user} = useContext(Context)
-    //const {countries} = useContext(Context)
-    console.log(user)
-
     return (
         <Routes>
             {user.isAuth && authRoutes.map(({path, Component}) =>
